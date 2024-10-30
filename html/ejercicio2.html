@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frases Memorables de Deadpool</title>
+    <script src="../js/utilidades.js"></script>
+</head>
+<body>
+    <script>
+        h1 = crearNodoConTexto("h1", "Frases memorables de Deadpool")
+        p1 = crearNodoConTexto("p","Deadpool es conocido por su ingenio rápido y su sentido del humor único . Aquí hay algunas de sus frases más memorables.")
+        h2 = crearNodoConTexto("h2","Citas Famosas")
+       
+        parrafoDos = crearNodo("p")
+        strong1 = crearNodoConTexto("Strong","Nota:")     
+        textoParrafoTres = document.createTextNode(" Cada una de estas frases captura perfectamente el espiritu sarcástico y subversuvo de Deadpool.")
+        parrafoDos.appendChild(strong1)
+        parrafoDos.appendChild(textoParrafoTres)
+
+
+
+
+        h2Vid = crearNodoConTexto("h2","video de las Mejores Escenas")
+        video = crearVideo("../recursos/videos/videoplayback.mp4")
+
+
+
+        ul = crearNodo("ul")
+        liUno = crearNodoConTexto("li", " Maximum effort!")
+        liDos = crearNodoConTexto("li", "I'm about to do you what Limp Bizkit did to music in the late 90s.")
+        liTres = crearNodoConTexto("li", "You're probably thinking. 'This was a superhero movie but that guy in the suit just turned that other guy into a kebab!'")
+
+        adicionarNodoAContenedor(liUno, ul)
+        adicionarNodoAContenedor(liDos, ul)
+        adicionarNodoAContenedor(liTres, ul)
+
+
+
+
+
+        adicionarNodoABody(h1)
+        adicionarNodoABody(p1)
+        adicionarNodoABody(h2)
+        adicionarNodoABody(ul)
+        adicionarNodoABody(parrafoDos)
+        adicionarNodoABody(h2Vid)
+        adicionarNodoABody(video)
+
+
+
+    </script>
+</body>
+</html>

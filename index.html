@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./js/utilidades.js"></script>
+</head>
+
+<body>
+    <script>
+        h1 = crearNodoConTexto("h1", "Bienvenido al sitio de Deadpool")
+        p1 = crearNodoConTexto("p", "Explora las siguientes páginas para conocer más sobre Deadpool y sus frases memorables")
+        h2A = crearNodoConTexto("h2", "Menú de navegación")
+
+        ul = crearNodo("ul")
+        liUno = crearNodo("li")
+        liDos = crearNodo("li")
+        ejer1 = crearNodoEn("a","Personajes Principales","html/ejercicio1.html","_blank")
+        ejer2 = crearNodoEn("a","Frases Memorables","html/ejercicio2.html","_blank")
+
+        adicionarNodoAContenedor(ejer1,liUno)
+        adicionarNodoAContenedor(ejer2,liDos)
+        adicionarNodoAContenedor(liUno, ul)
+        adicionarNodoAContenedor(liDos, ul)
+
+        parrafoUno = crearNodo("p")
+        textoParrafoUno = document.createTextNode("Deadpool, también conocido como")     
+        textoParrafoDos = document.createTextNode(", es un anti-heroe de marvel conocido por su humor sarcastico y sus habilidades de combate.")
+        strong1 = crearNodoConTexto("strong", "Wade Wilson")
+        parrafoUno.appendChild(textoParrafoUno)
+        parrafoUno.appendChild(strong1)
+        parrafoUno.appendChild(textoParrafoDos)
+
+        imagenDeadpool1 = crearImagen("../recursos/imagenes/imagen1.jpg", "wade wilson","200px", "100px")
+
+       
+        adicionarNodoABody(h1)
+        adicionarNodoABody(p1)
+        adicionarNodoABody(h2A)
+        adicionarNodoABody(ul)
+        adicionarNodoABody(parrafoUno)
+        adicionarNodoABody(imagenDeadpool1)
+
+
+
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>
